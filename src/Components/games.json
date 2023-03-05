@@ -1,0 +1,25 @@
+{
+  "games":[
+      {   
+        "name":"God of War ragnarok"
+   
+       },
+      {   
+        "name":"XCOM 2"
+    
+       },
+       {   
+       "name":"Call of Duty"
+    
+       },
+       {   
+        "name":"Watch Dogs 2"
+   
+    
+       },
+       {   
+        "name":"FIFA 23"    
+    
+    }
+  ]
+}
