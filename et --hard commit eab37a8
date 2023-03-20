@@ -1,0 +1,26 @@
+[33m76d7562[m[33m ([m[1;36mHEAD -> [m[1;32mgh-pages[m[33m)[m HEAD@{0}: revert: Revert "new"
+[33md6fe2f9[m[33m ([m[1;31morigin/gh-pages[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{1}: reset: moving to ORIG_HEAD
+[33md6fe2f9[m[33m ([m[1;31morigin/gh-pages[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{2}: checkout: moving from master to gh-pages
+[33md6fe2f9[m[33m ([m[1;31morigin/gh-pages[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{3}: reset: moving to ORIG_HEAD
+[33md6fe2f9[m[33m ([m[1;31morigin/gh-pages[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{4}: reset: moving to gh-pages
+[33md6fe2f9[m[33m ([m[1;31morigin/gh-pages[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{5}: reset: moving to gh-pages
+[33m95766eb[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{6}: checkout: moving from gh-pages to master
+[33md6fe2f9[m[33m ([m[1;31morigin/gh-pages[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{7}: commit: neww
+[33m95766eb[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{8}: checkout: moving from master to gh-pages
+[33m95766eb[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{9}: checkout: moving from gh-pages to master
+[33meab37a8[m HEAD@{10}: commit: new
+[33m3b289df[m HEAD@{11}: commit: up3
+[33m25a7538[m HEAD@{12}: commit: up2
+[33m264e646[m HEAD@{13}: commit: up1
+[33m4929485[m HEAD@{14}: commit: up
+[33m0a8cc2d[m HEAD@{15}: commit: update
+[33mda32579[m HEAD@{16}: commit: hey
+[33m5ce6eb9[m HEAD@{17}: checkout: moving from master to gh-pages
+[33m95766eb[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{18}: checkout: moving from gh-pages to master
+[33m5ce6eb9[m HEAD@{19}: commit: latest
+[33m95766eb[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{20}: checkout: moving from gh-pages to gh-pages
+[33m95766eb[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{21}: checkout: moving from master to gh-pages
+[33m95766eb[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{22}: checkout: moving from gh-pages to master
+[33m95766eb[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{23}: checkout: moving from master to gh-pages
+[33m95766eb[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{24}: commit: new
+[33m69e4d9d[m HEAD@{25}: commit (initial): new
