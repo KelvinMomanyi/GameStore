@@ -242,7 +242,24 @@ animation-timing-function: ease-out;
 
 
 }
-
+.sreams{
+  position: absolute;
+  border-radius: 0px 0px 30px 30px;
+  background-color: aqua;
+  margin-top:30px;
+  width: 7%;
+  height:7%;
+  left:250px;
+}
+.sreams2{
+  position: absolute;
+  border-radius: 0px 0px 30px 30px;
+  background-color: aqua;
+  margin-top:30px;
+  width: 7%;
+  height:7%;
+  left:950px;
+}
 .list{
   display: flex;
   flex-direction: row;
@@ -259,12 +276,19 @@ animation-timing-function: ease-out;
  .button3{
    position:absolute;
    top:80px;
-   left:80px;
-   background-color: blue;
-   border-radius: 20px;
+   left:140px;
+   background-color: rgb(1, 179, 155);
+   border-radius: 10px;
 
  }
+ .button4{
+  position:absolute;
+  top:550px;
+  left:670px;
+  background-color: rgb(7, 216, 220);
+  border-radius: 10px;
 
+}
 
  @media(max-width:1500px) and (min-width:1200px){
      .list{

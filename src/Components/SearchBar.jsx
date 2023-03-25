@@ -1,21 +1,24 @@
 import React, { Component, useState, useEffect } from 'react'
 import {BiSearch} from 'react-icons/bi'
 import { InputAdornment, TextField} from '@material-ui/core'
+import api from "../API/api";
+
+
 
 function SearchBar() {
-  const [query, setQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
   const [suggestions, setSuggestions] = useState([]);
-  // const[data,setData]=useState([])
+  // // const[data,setData]=useState([])
 
   
-  // data to be filtered
-  const data = [
-    'Call of Duty',
-    'Fifa 23', 
-     'Watch Dogs 2',
-    'GTA 5'
-  ];
-  // useEffect(() => {
+  // // data to be filtered
+  // const data = [
+  //   'Call of Duty',
+  //   'Fifa 23', 
+  //    'Watch Dogs 2',
+  //   'GTA 5'
+  // ];
+  // // useEffect(() => {
   //   const fetchData = async () => {
   //     try {
   //       const response = await fetch('./games.json');
@@ -29,6 +32,48 @@ function SearchBar() {
   //   fetchData();
   // }, []);
   // const[games,setGames]=useState([])
+    
+  // useEffect(() => {
+  //   const fetchData= async()=>{
+     
+
+      
+  //     // let finalArray= dataArray.map(game=>{
+  //     //    let newURL =game.box_art_url.replace('{width}','980').replace('{height}','550');
+  //     //    game.box_art_url=newURL
+  //     // })
+  //   console.log(result)
+  //   }
+    
+  // })
+
+      // setInterval(() => {
+      //   setCurrentIndex((currentIndex + 1) % dataArray.length);     
+      // }, 3000);
+
+          
+      useEffect(() => {
+        const fetchData = async () => {
+          const response = await api.get(`https://api.twitch.tv/helix/analytics/games?${searchQuery}`);
+          const data = await response.json();
+          setSuggestions(data);
+          console.log(data);
+        };
+      
+        if (searchQuery) {
+          fetchData();
+        } else {
+          setSuggestions([]);
+        }
+      }, [searchQuery]);
+      
+
+
+
+
+
+
+
 
   // const gamArray=[
   //   {name:'Call of Duty'},
@@ -36,18 +81,22 @@ function SearchBar() {
   //   {name: 'Watch Dogs 2'},
   //   {naame:'GTA 5'}
   // ]
-  const filterData = (value) => {
-    if(value===''){
-      setSuggestions([])
-    }else{
-     const result = data.filter((item) => item.toLowerCase().includes(value.toLowerCase()));
-       setSuggestions(result);
-    }
+  //  const result= api.get('https://api.twitch.tv/helix/search/categories')
+  //   const filterData = (value) => {
+  //      if(value===''){
+  //        setSuggestions([])
+  //      }else{
+  //       const res = result.filter((item) => item.toLowerCase().includes(value.toLowerCase()));
+  //         setSuggestions(res);
+  //      }
     
+  //   };
+
+  const handleInputChange = (event) => {
+    setSearchQuery(event.target.value);
   };
-
-
-   
+  const availableSuggestions = suggestions.filter((suggestion) => suggestion.available);
+ 
   return (
     <div className='searchbar'>
        
@@ -71,17 +120,14 @@ function SearchBar() {
       //  })
       // }}
 
-      onChange={(e) => {
-        setQuery(e.target.value);
-        filterData(e.target.value);
-      }}
+      onChange={handleInputChange}
      
     />
-       <div>
-        {suggestions.map((item) => (
-          <div className='ser' key={item}>{item}</div>
-        ))}
-      </div> 
+     <ul>
+      {availableSuggestions.map((suggestion) => (
+        <li key={suggestion.id}>{suggestion.name}</li>
+      ))}
+    </ul>
     </div>
   )
 }

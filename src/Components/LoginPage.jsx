@@ -7,6 +7,10 @@ function LoginPage() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
+  const clientId = 'x1zbg9zvt5rtpde23f8yv0l0hw14qz';
+const redirectUri = 'http://localhost:3000/Home'; // Your callback URL
+const scope = 'user:read:email'
+
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
   };
@@ -25,7 +29,12 @@ function LoginPage() {
       alert("Invalid username or password"); // display an error message if the login is unsuccessful
     }
   };
-
+ 
+    const handleLogin = () => {
+      const authUrl = `https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}`;
+      window.location.href = authUrl;
+    };
+  
   return (
 
     <div className='logpage'>
@@ -35,7 +44,9 @@ function LoginPage() {
           <input placeholder='Password' className='input-pass' value={password} onChange={handlePasswordChange}/>
           <button type="submit" className='button3' onClick={handleSubmit}>Login</button>
        </div>
-      
+       <button  className='button4' onClick={handleLogin}>
+            Login with Twitch
+       </button>
 
 
     </div>

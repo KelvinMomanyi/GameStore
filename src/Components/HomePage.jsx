@@ -17,6 +17,8 @@ import DropdownMenu from './Dropddown'
 import Footer from './Footer';
 import ProfList from './ProfList';
 import AddToCart from './AddToCart';
+import Sreams from './Sreams';
+import Sreams2 from './Sreams2';
 
 
 function HomePage() {
@@ -39,8 +41,9 @@ function HomePage() {
       <Breather2/> */}
       
         {/* <AddToCart/> */}
-    
-      <Profile/>
+       <Sreams/>
+       <Sreams2/>
+       <Profile/>
       <Icons/>
       <Logo/>
       <DropdownMenu/>
