@@ -17,8 +17,8 @@ function App() {
     //   <LoginPage/>
     // </Link>
       <Routes>
-        <Route path="/" element={<LoginPage/>} />
-        <Route path="/Home" element={<HomePage/>} />
+        <Route path="/gamestore" element={<LoginPage/>} />
+        <Route path="/gamestore/Home" element={<HomePage/>} />
       </Routes>
    
  
