@@ -21,7 +21,7 @@ function MainUi () {
         const result= await api.get(`https://api.twitch.tv/helix/games/top?${currentIndex}`)
 
         let dataArray= result.data.data
-        let finalArray= dataArray.map(game=>{
+         dataArray.map(game=>{
            let newURL =game.box_art_url.replace('{width}','1280').replace('{height}','720');
            game.box_art_url=newURL
         })
@@ -41,7 +41,7 @@ function MainUi () {
       }, 300000);
       return () => clearInterval(interval);  
  
-    },[games.length]);
+    },[currentIndex, games.length]);
   
     return (
      <div className='mainUi' >
@@ -49,7 +49,7 @@ function MainUi () {
          
          {games.map(game=>(
           
-            <img key={games.igdb_id}src={game.box_art_url}  className="fitImage"/>
+            <img key={games.igdb_id}src={game.box_art_url}  className="fitImage" alt="$"/>
           
          ))
          

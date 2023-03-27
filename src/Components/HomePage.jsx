@@ -1,6 +1,6 @@
 import React from 'react'
 // import { MediaQuery } from 'react-responsive'
-import { useState } from 'react';
+// import { useState } from 'react';
 // import CartContext from '../Context.js/CartContext';
 import SideBar from './SideBar'
 import SearchBar from './SearchBar'
@@ -23,7 +23,7 @@ import Sreams2 from './Sreams2';
 
 function HomePage() {
     // const [isHovering, setIsHovering] = useState(false);
-    const [cartItems, setCartItems] = useState([]);
+    // const [cartItems, setCartItems] = useState([]);
     // const addToCart = (item) => {
     //   setCartItems([...cartItems, item]);
     // };
