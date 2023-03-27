@@ -1,14 +1,14 @@
-import React, {useState, useEffect,Component} from 'react'
-import GTA from '../images/GTA.mp4'
-import Videoplayer from './Videoplayer'
-import MapImage from './MapImage';
+import React, {Component} from 'react'
+// import GTA from '../images/GTA.mp4'
+// import Videoplayer from './Videoplayer'
+// import MapImage from './MapImage';
 import images from '../image.json'
-import Five from '../images/five.jpg';
-import Four from '../images/four.png';
-import One from '../images/one.jpg';
-import Three from '../images/three.jpg';
-import Two from '../images/two.jpg';
-import axios from 'axios'
+// import Five from '../images/five.jpg';
+// import Four from '../images/four.png';
+// import One from '../images/one.jpg';
+// import Three from '../images/three.jpg';
+// import Two from '../images/two.jpg';
+// import axios from 'axios'
 
 
 
@@ -142,7 +142,7 @@ export default List;
        
 
 
-       {/*<div className='gamelist' onClick={playVideo}>
+       /*<div className='gamelist' onClick={playVideo}>
        </div>
        <div className='gamelist' onClick={playVideo}>
        </div>
@@ -155,4 +155,4 @@ export default List;
   )
 }
 
-export default List*/}
+export default List*/

@@ -1,9 +1,9 @@
 import React,{ useContext } from 'react'
-import { connect } from 'react-redux';
-import CartContext from '../Context.js/CartContext'; 
+// import { connect } from 'react-redux';
+// import CartContext from '../Context.js/CartContext'; 
 
 function AddToCart(props) {
-  const { cartItems, addToCart } = useContext(CartContext);
+  // const { cartItems, addToCart } = useContext(CartContext);
 //   const addToCart = item => {
 //      props.dispatch({ type: 'ADD_TO_CART', payload: item }); }
      
@@ -12,4 +12,4 @@ function AddToCart(props) {
   )
 }
 
-export default connect()(AddToCart)
+export default AddToCart

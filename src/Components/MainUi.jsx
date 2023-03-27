@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import React,{Component} from 'react'
-import axios from 'axios'
-import one from '../images/one.jpg'
-import GTA from '../images/GTA.mp4'
-import {MediaQuery} from "react-responsive"
+import React from 'react'
+// import axios from 'axios'
+// import one from '../images/one.jpg'
+// import GTA from '../images/GTA.mp4'
+// import {MediaQuery} from "react-responsive"
 // import Games from './vidi.json'
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player";
 import api from "../API/api";
 
 function MainUi () {

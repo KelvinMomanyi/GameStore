@@ -38,7 +38,7 @@ const scope = 'user:read:email'
   return (
 
     <div className='logpage'>
-      <img src={Lg2} className='log1'/>  
+      <img src={Lg2} className='log1' alt='3'/>  
        <div className='inputt' onSubmit={handleSubmit}>
           <input placeholder='Email' className='input-mail' value={username} onChange={handleUsernameChange} />
           <input placeholder='Password' className='input-pass' value={password} onChange={handlePasswordChange}/>

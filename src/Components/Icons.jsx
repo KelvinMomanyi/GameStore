@@ -1,5 +1,5 @@
-import React,{useState, useEffect} from 'react'
-import {IoLogoPlaystation , IoIosCloudDownload, IoIosCog,IoIosFingerPrint, IoIosLeaf } from 'react-icons/io'
+import React,{useState} from 'react'
+import {IoLogoPlaystation } from 'react-icons/io'
 import {FaOpencart} from 'react-icons/fa'
 import {FaXbox} from 'react-icons/fa'
 import {SiNintendoswitch} from 'react-icons/si'
