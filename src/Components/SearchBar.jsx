@@ -1,6 +1,6 @@
 import React, { Component, useState, useEffect } from 'react'
 import {BiSearch} from 'react-icons/bi'
-import { InputAdornment, TextField} from '@material-ui/core'
+// import { InputAdornment, TextField} from '@material-ui/core'
 import api from "../API/api";
 
 
@@ -99,8 +99,11 @@ function SearchBar() {
  
   return (
     <div className='searchbar'>
-       
-      <TextField
+       <input
+        placeholder="Search"
+        style={{ backgroundColor: 'aqua', color: 'black', fontSize: '20px', borderRadius:'20px'}}
+       />
+      {/* <TextField
       placeholder="Search"
       InputProps={{
         startAdornment: (
@@ -122,7 +125,7 @@ function SearchBar() {
 
       onChange={handleInputChange}
      
-    />
+    /> */}
      <ul>
       {availableSuggestions.map((suggestion) => (
         <li key={suggestion.id}>{suggestion.name}</li>
